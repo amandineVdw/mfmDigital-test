@@ -1,0 +1,82 @@
+/* style.css */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+
+/* Helvetica Normal */
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/Helvetica.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Helvetica Bold */
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/Helvetica-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Helvetica Light */
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/helvetica-light-587ebe5a59211.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-weight: normal;
+  background-color: #f4f4f4;
+}
+
+.light-text {
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+.container {
+  max-width: 1440px; /* Utilise toute la largeur disponible du conteneur */
+  max-height: 884px; /* Hauteur fixe */
+  background-color: #fff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centre les éléments du formulaire horizontalement */
+  max-width: 584px; /* Limite la largeur du formulaire */
+  max-height: 875px;
+
+  left: 651px; /* Centre le formulaire horizontalement */
+}
+
+input,
+textarea {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  background-color: #a72857;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}

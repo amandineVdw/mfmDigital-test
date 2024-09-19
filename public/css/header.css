@@ -1,0 +1,13 @@
+/* header.css */
+
+.header-img {
+    position: relative; /* Pour que la position absolue du formulaire soit relative à ce conteneur */
+    z-index: 1; /* Assurez-vous que le z-index de la bannière est inférieur à celui du formulaire */
+    width: 100%; /* Utilise toute la largeur disponible du conteneur */
+    height: 370px; /* Hauteur fixe */
+    object-fit: cover; /* Assure que l'image couvre le conteneur sans déformation */
+    max-width: 1440px; /* Limite la largeur maximale à 1440px */
+}
+
+
+

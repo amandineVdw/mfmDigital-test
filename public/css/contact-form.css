@@ -1,0 +1,82 @@
+/* Style pour le formulaire de contact */
+.contact-form {
+  position: absolute;
+  max-width: 584px;
+  max-height: 875px;
+  background-color: #d53b3b;
+  top: 296px;
+  left: 651px;
+  z-index: 15;
+  border-radius: 8px;
+  box-shadow: 0px 4px 28px rgba(28, 133, 166, 0.13);
+  font-family: Helvetica, sans-serif;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h2 {
+  border: 2px solid red; /* Ajuste l'épaisseur si besoin */
+}
+
+/* Disposition des champs dans les lignes */
+.form-row {
+  display: flex;
+  justify-content: center; /* Centrer les inputs horizontalement */
+  margin-bottom: 15px;
+}
+
+.form-group,
+.form-group-half {
+  width: 100%;
+  margin-right: 0;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+/* Ajustement de la largeur pour les champs en demi-ligne */
+.form-group-half {
+  max-width: 40px; /* Largeur partagée sur une seule ligne */
+}
+
+.form-group-half:last-child {
+  margin-right: 0;
+}
+
+/* Style de base pour les inputs */
+input,
+textarea {
+  font-size: 16px;
+  width: 488px; /* Largeur fixe */
+  padding: 10px 0;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  margin: 0 auto;
+  display: block;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 1px solid #007bff;
+}
+
+/* Style des labels */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+  }
+
+  .form-group-half,
+  .form-group {
+    width: 100%;
+    max-width: 100%;
+  }
+}
