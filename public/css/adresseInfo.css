@@ -2,7 +2,6 @@
 
 .info-container {
   position: absolute;
-  font-family: Helvetica, sans-serif;
   max-width: 382px; /* Hauteur fixe */
   max-height: 192px; /* Hauteur fixe */
   background-color: #fff;
@@ -17,7 +16,7 @@
 
 /* Responsivité : Ajuste les dimensions du conteneur en fonction de la taille de l'écran */
 @media screen and (max-width: 382px) {
-  .info-container {
+  .adresse {
     max-width: 100%; /* Utilise toute la largeur de l'écran pour les petits écrans */
     left: 0;
     right: 0;
@@ -26,10 +25,12 @@
 }
 
 .adresse p {
-  font-size: 18px;
-  font-weight: 300;
+  font-family: 'Helvetica light', sans-serif;
   font-style: normal;
-  margin-top: 2px;
+  font-size: 18px;
+  line-height: 230% !important;
+  Height: 96px;
+  Width: 382px;
 }
 
 .adresse ul li {
@@ -37,20 +38,9 @@
   margin-bottom: 10px;
 }
 
-h1 {
-  box-sizing: border-box;
-  font-size: 34px;
-  font-weight: 700;
-  font-style: normal;
-  margin-bottom: 10px;
-}
 
-/* Supprimer les puces de la liste */
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
+
+
 
 /* Alignement horizontal pour les icônes */
 .social-icons {
@@ -74,12 +64,3 @@ ul {
   text-decoration: none;
 }
 
-/* Style pour les liens d'email */
-.adresse p a {
-  color: #000; /* Couleur noire */
-  text-decoration: none; /* Enlève le soulignement */
-}
-
-.adresse p a:hover {
-  text-decoration: underline; /* Soulignement au survol (optionnel) */
-}

@@ -1,63 +1,112 @@
-/* style.css */
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+/* ---------- public/css/style.css -------------------------------- */
+/*------------------------------------------------------------------
+    IMPORT FONTS
+-------------------------------------------------------------------*/
 
+@import url(fonts-Helvetica.css);
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
 
-/* Helvetica Normal */
-@font-face {
-  font-family: "Helvetica";
-  src: url("../fonts/Helvetica.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
+/*
+    font-family: 'Helvetica', sans-serif;
+    icones: font-awesome
+*/
 
-/* Helvetica Bold */
-@font-face {
-  font-family: "Helvetica";
-  src: url("../fonts/Helvetica-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
+/*------------------------------------------------------------------
+    IMPORT FILES
+-------------------------------------------------------------------*/
 
-/* Helvetica Light */
-@font-face {
-  font-family: "Helvetica";
-  src: url("../fonts/helvetica-light-587ebe5a59211.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
+@import url(adresseInfo.css);
+@import url(contact-form.css);
+@import url(header.css);
 
+/*------------------------------------------------------------------
+    SKELETON
+-------------------------------------------------------------------*/
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  color: #000000;
 }
-
 
 body {
-  font-family: Helvetica, sans-serif;
-  font-weight: normal;
+  -webkit-font-smoothing: antialiased; /* Pour les navigateurs WebKit (Chrome, Safari) */
+  -moz-osx-font-smoothing: grayscale; /* Pour Firefox sur MacOS */
   background-color: #f4f4f4;
+  font-family: Helvetica, sans-serif;
 }
 
-.light-text {
-  font-family: Helvetica, sans-serif;
-  font-weight: 300;
+h1,
+h2 {
+  letter-spacing: 0;
+  font-family: "Helvetica";
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 34px;
+  font-weight: 300px;
+  line-height: 120% !important;
+  height: 24px;
+  width: 364px;
+}
+
+h2 {
+  font-size: 34px;
+  font-weight: 700px;
+  line-height: 120% !important;
+}
+
+a {
+  text-decoration: none !important;
+  color: #000000;
+}
+
+p {
+  font-size: 18px;
+  letter-spacing: 0;
+}
+
+a.btn {
+  text-decoration: none !important;
+  outline: none !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Supprimer les puces de la liste */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+:focus {
+  outline: 0;
 }
 
 .container {
   max-width: 1440px; /* Utilise toute la largeur disponible du conteneur */
   max-height: 884px; /* Hauteur fixe */
   background-color: #fff;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Centre les éléments du formulaire horizontalement */
-  max-width: 584px; /* Limite la largeur du formulaire */
-  max-height: 875px;
-
-  left: 651px; /* Centre le formulaire horizontalement */
 }
 
 input,
@@ -70,7 +119,7 @@ textarea {
 
 button {
   padding: 10px;
-  background-color: #a72857;
+  background-color: #218838;
   color: white;
   border: none;
   border-radius: 5px;
