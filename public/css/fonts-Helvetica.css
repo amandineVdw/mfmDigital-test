@@ -4,20 +4,21 @@
   font-family: "Helvetica";
   font-style: normal;
   font-weight: 400;
-  src: local("Helvetica"), url("../fonts/Helvetica.ttf") format("tff");
+  src: local("Helvetica"), url("../fonts/Helvetica.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Helvetica Bold";
+  font-family: "Helvetica-Bold";
   font-style: normal;
   font-weight: 700;
-  src: local("Helvetica Bold"), url("../fonts/Helvetica-Bold.tff") format("tff");
+  src: local("Helvetica-Bold"),
+    url("../fonts/Helvetica-Bold.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Helvetica Light";
+  font-family: "Helvetica-Light";
   font-style: normal;
   font-weight: 300;
-  src: local("Helvetica Light"),
-    url("../fonts/Helvetica-Light.ttf") format("tff");
+  src: local("Helvetica-Light"),
+    url("../fonts/Helvetica-Light.ttf") format("truetype");
 }

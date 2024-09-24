@@ -13,6 +13,7 @@ require_once BASE_PATH . 'src/controllers/ContactController.php';
 require_once BASE_PATH . 'src/models/Database.php';
 require_once BASE_PATH . 'src/error-handler.php';
 
+
 // Connexion à la base de données
 $database = new Database();
 $db = $database->getConnection();
